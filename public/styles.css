@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #fff;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  height: 100svh;
+
+  background-color: rgb(48, 48, 58);
+}
+
+svg {
+  height: 100%;
+  aspect-ratio: 1;
+}
+
+h1 {
+
+  font-size: clamp(1.5em, 8vw, 3em); 
+    font-family: Arial, Helvetica, sans-serif;
+  border-radius: 5px;
+  text-align: center;
+}
+
+hr { 
+    height: 30px; 
+    margin-bottom: -30px;
+    border-style: solid; 
+    border-color: rgb(46, 44, 53); 
+    border-color: linear-gradient(to top, rgb(46, 44, 53) 10%, transparent 60%);;
+    border-width: 2px 0 0 0; 
+    border-radius: .7em; 
+  } 
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  height: 100vh;
+  height: 100svh;
+  width: 100vw;
+  width: 100svw;
+  padding: 1.5em;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  background-color: rgb(28, 27, 30);
+  max-height: 67.5em;
+  min-width: 15em;
+}
+
+ul {
+  height: 100%;
+  background-color: rgb(46, 44, 53);
+  background: linear-gradient(to top, rgb(46, 44, 53) 10%, transparent 60%);
+  border-radius: 0.5rem 0.5rem 0.2rem 0.2rem;
+  overflow: auto;
+  padding: 1rem;
+}
+
+li {
+  width: calc(100%);
+
+  text-decoration: none;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+form div {
+  display: flex;
+  flex-direction: row;
+  gap: 0.4rem;
+}
+
+input[type="text"] {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.125em;
+  padding: 1em;
+  border-radius: 0.2rem 0.2rem 0.2rem 0.7rem;
+  border: none;
+  width: 100%;
+  background-color: rgb(46, 44, 53);
+  color: #fff;
+}
+
+button {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.125em;
+  border-radius: 0.2rem;
+  border: none;
+  padding: 0.5em;
+  cursor: pointer;
+  background-color: rgb(46, 44, 53);
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.send {
+  border-radius: 0.2rem 0.2rem 0.7rem 0.2rem;
+}
+
+.icon {
+  width: 100%;
+    aspect-ratio: 7/5;
+    padding: 0.2rem;
+    padding-bottom: 0.4rem;
+  font-size: 1.5rem;
+  transition: all 0.3s ease-in-out;
+
+}
+
+.icon p{
+    transition: all 0.3s ease-in-out;
+  
+  }
+
+.icon:hover p{
+    transform: scale(0.8);
+    transition: all 0.3s ease-in-out;
+
+}
+
+.icons {
+  width: 100%;
+  overflow-x: auto;
+}
+
+button svg {
+  fill: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover svg,
+.icon:hover p {
+  transform: scale(0.8);
+}
+
+
+
+@media screen and (min-width: 650px) {
+  section {
+    width: auto;
+    aspect-ratio: 9/16;
+    min-width: 19em;
+    border-radius: 0.4rem;
+  }
+}

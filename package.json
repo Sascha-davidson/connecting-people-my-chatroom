@@ -1,0 +1,30 @@
+{
+  "name": "connecting-people-my-first-chatroom",
+  "version": "1.0.0",
+  "description": "chatroom",
+  "main": "server.js",
+  "type": "module",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "start": "node server",
+    "dev": "nodemon server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sascha-davidson/connecting-people-my-first-chatroom.git"
+  },
+  "author": "Sascha Davidson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Sascha-davidson/connecting-people-my-first-chatroom/issues"
+  },
+  "homepage": "https://github.com/Sascha-davidson/connecting-people-my-first-chatroom#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "socket.io": "^4.6.1"
+  }
+}
