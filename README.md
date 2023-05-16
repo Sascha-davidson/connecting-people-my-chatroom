@@ -28,6 +28,7 @@ De mensen die met elkaar willen chaten. (De mensen die het gaan bekijken zijn kl
 - html
 - css
 - javascript
+- node
 - socket
 
 ## Installatie
