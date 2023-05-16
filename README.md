@@ -2,7 +2,7 @@
 
 # connecting people with my first chatroom
 
-<img width="100%" alt="image" src="https://github.com/Sascha-davidson/connecting-people-my-first-chatroom/assets/112861160/a82ee2f2-22c6-4169-bdf1-da941ef930af">
+<img width="100%" alt="foto van mijn website" src="https://github.com/Sascha-davidson/connecting-people-my-first-chatroom/assets/112861160/a82ee2f2-22c6-4169-bdf1-da941ef930af">
 
 https://connecting-people-my-first-chatroom-git-main-sascha-davidson.vercel.app/
 
