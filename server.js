@@ -13,12 +13,12 @@ const port = process.env.PORT || 8000;
 
 app.use(express.static(path.resolve("public")));
 
-app.set("view engine", "ejs");
-app.set("views", "./views");
+// app.set("view engine", "ejs");
+// app.set("views", "./views");
 
-app.get("/", (req, res) => {
-  res.render('index')
-});
+// app.get("/", (req, res) => {
+//   res.render('index')
+// });
 
 ioServer.on(`connection`, (client) => {
   console.log(`user ${client.id} connected`);

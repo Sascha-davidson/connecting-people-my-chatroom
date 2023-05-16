@@ -11,8 +11,10 @@ body {
   justify-content: center;
   height: 100vh;
   height: 100svh;
+  font-family: Arial, Helvetica, sans-serif;
 
   background-color: rgb(48, 48, 58);
+  min-height: 650px;
 }
 
 svg {
@@ -22,8 +24,8 @@ svg {
 
 h1 {
 
-  font-size: clamp(1.5em, 8vw, 3em); 
-    font-family: Arial, Helvetica, sans-serif;
+  font-size: clamp(1.5em, 8vw, 2em); 
+    
   border-radius: 5px;
   text-align: center;
 }
@@ -49,13 +51,12 @@ section {
   width: 100vw;
   width: 100svw;
   padding: 1.5em;
-
   display: flex;
   flex-direction: column;
   gap: 0.4rem;
   background-color: rgb(28, 27, 30);
-  max-height: 67.5em;
   min-width: 15em;
+  min-height: 585px;
 }
 
 ul {
@@ -65,12 +66,18 @@ ul {
   border-radius: 0.5rem 0.5rem 0.2rem 0.2rem;
   overflow: auto;
   padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4em;
 }
 
 li {
-  width: calc(100%);
-
+  width: fit-content;
+  list-style-type: none;
   text-decoration: none;
+  background-color: rgb(255 255 255 / 8%);
+  padding: .75rem 1rem;
+  border-radius: .2em;
 }
 
 form {
@@ -79,14 +86,14 @@ form {
   gap: 0.4rem;
 }
 
-form div {
+form div{
   display: flex;
   flex-direction: row;
   gap: 0.4rem;
 }
 
 input[type="text"] {
-  font-family: Arial, Helvetica, sans-serif;
+  
   font-size: 1.125em;
   padding: 1em;
   border-radius: 0.2rem 0.2rem 0.2rem 0.7rem;
@@ -97,7 +104,7 @@ input[type="text"] {
 }
 
 button {
-  font-family: Arial, Helvetica, sans-serif;
+  
   font-size: 1.125em;
   border-radius: 0.2rem;
   border: none;
@@ -122,20 +129,26 @@ button {
 
 }
 
+.icon:is(:hover, :focus){
+  background-color: #3E3D45;
+
+}
+
 .icon p{
     transition: all 0.3s ease-in-out;
-  
+
   }
 
 .icon:hover p{
     transform: scale(0.8);
     transition: all 0.3s ease-in-out;
-
 }
 
 .icons {
-  width: 100%;
   overflow-x: auto;
+  padding: .2rem;
+  margin: -.2rem;
+
 }
 
 button svg {
@@ -152,9 +165,17 @@ button:hover svg,
 
 @media screen and (min-width: 650px) {
   section {
+    height: 90vh;
+    height: 90svh;
+    width: 90vw;
+    width: 90svw;
+
     width: auto;
     aspect-ratio: 9/16;
     min-width: 19em;
     border-radius: 0.4rem;
+    max-height: 67.5em;
+
   }
+
 }
