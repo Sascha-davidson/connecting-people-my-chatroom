@@ -1,6 +1,8 @@
 > _Fork_ deze leertaak en ga aan de slag. Onderstaande outline ga je gedurende deze taak in jouw eigen GitHub omgeving uitwerken. De instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
 
-# Titel
+# connecting people my first chatroom
+
+<img width="100%" alt="image" src="https://github.com/Sascha-davidson/connecting-people-my-first-chatroom/assets/112861160/a82ee2f2-22c6-4169-bdf1-da941ef930af">
 
 <!-- Geef je project een titel en schrijf in één zin wat het is -->
 
