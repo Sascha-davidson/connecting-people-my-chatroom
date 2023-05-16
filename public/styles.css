@@ -119,6 +119,11 @@ button {
   border-radius: 0.2rem 0.2rem 0.7rem 0.2rem;
 }
 
+.send:is(:hover, :focus){
+  background-color: #3E3D45;
+
+}
+
 .icon {
   width: 100%;
     aspect-ratio: 7/5;
@@ -139,7 +144,7 @@ button {
 
   }
 
-.icon:hover p{
+.icon:is(:hover, :focus) p{
     transform: scale(0.8);
     transition: all 0.3s ease-in-out;
 }
