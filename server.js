@@ -2,9 +2,6 @@ import * as path from "path";
 import { Server } from "socket.io";
 import { createServer } from "http";
 import express from "express";
-import { fileURLToPath } from 'url';
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
 
 const app = express();
 const http = createServer(app);
@@ -13,18 +10,11 @@ const port = process.env.PORT || 8000;
 
 app.use(express.static(path.resolve("public")));
 
-// app.set("view engine", "ejs");
-// app.set("views", "./views");
-
-// app.get("/", (req, res) => {
-//   res.render('index')
-// });
-
 ioServer.on(`connection`, (client) => {
   console.log(`user ${client.id} connected`);
 
-  client.on(`massage`, (message) => {
-    console.log(`user ${client.id} sent massege: ${message}`);
+  client.on(`message`, (message) => {
+    console.log(`user ${client.id} sent messege: ${message}`);
 
     ioServer.emit(`message`, message);
   });
@@ -34,6 +24,6 @@ ioServer.on(`connection`, (client) => {
   });
 });
 
-app.listen(port, function () {
+http.listen(port, function () {
   console.log(`server running on http://localhost:${port}`);
 });

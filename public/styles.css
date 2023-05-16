@@ -86,7 +86,7 @@ form {
   gap: 0.4rem;
 }
 
-form div{
+.menu{
   display: flex;
   flex-direction: row;
   gap: 0.4rem;
@@ -129,7 +129,7 @@ button {
     aspect-ratio: 7/5;
     padding: 0.2rem;
     padding-bottom: 0.4rem;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   transition: all 0.3s ease-in-out;
 
 }
@@ -141,7 +141,6 @@ button {
 
 .icon p{
     transition: all 0.3s ease-in-out;
-
   }
 
 .icon:is(:hover, :focus) p{
@@ -153,7 +152,9 @@ button {
   overflow-x: auto;
   padding: .2rem;
   margin: -.2rem;
-
+  display: flex;
+  flex-direction: row;
+  gap: 0.4rem;
 }
 
 button svg {

@@ -14,7 +14,7 @@
     <link rel="icon" type="image/png" href="assets/logo-icon/va-favicon.svg" />
 
     <link rel="stylesheet" href="/styles.css" />
-    <script src="socket.io/socket.io.js" defer></script>
+    <script src="/socket.io/socket.io.js" defer></script>
     <script src="/scripts.js" defer></script>
 </head>
 
@@ -25,42 +25,40 @@
             <h1> awsome chatroom</h1>
             <hr>
             <ul>
-                <li>test</li>
             </ul>
+
+            <div class="icons">
+                <button class="icon" id="icon-1">
+                    <p>✌️</p>
+                </button>
+                <button class="icon" id="icon-2">
+                    <p>💖</p>
+                </button>
+                <button class="icon" id="icon-3">
+                    <p>✨</p>
+                </button>
+                <button class="icon" id="icon-4">
+                    <p>😂</p>
+                </button>
+                <button class="icon" id="icon-5">
+                    <p>👍</p>
+                </button>
+                <button class="icon" id="icon-6">
+                    <p>👌</p>
+                </button>
+                <button class="icon" id="icon-7">
+                    <p>✅</p>
+                </button>
+                <button class="icon" id="icon-8">
+                    <p>❌</p>
+                </button>
+                <button class="icon" id="icon-9D">
+                    <p>💯</p>
+                </button>
+            </div>
             <form>
-                <div class="icons">
-                    <button class="icon" id="icon-1">
-                        <p>✌️</p>
-                    </button>
-                    <button class="icon" id="icon-2">
-                        <p>💖</p>
-                    </button>
-                    <button class="icon" id="icon-3">
-                        <p>✨</p>
-                    </button>
-                    <button class="icon" id="icon-4">
-                        <p>😂</p>
-                    </button>
-                    <button class="icon" id="icon-5">
-                        <p>👍</p>
-                    </button>
-                    <button class="icon" id="icon-6">
-                        <p>👌</p>
-                    </button>
-                    <button class="icon" id="icon-7">
-                        <p>✅</p>
-                    </button>
-                    <button class="icon" id="icon-8">
-                        <p>❌</p>
-                    </button>
-                    <button class="icon" id="icon-9D">
-                        <p>💯</p>
-                    </button>
-
-                </div>
-
                 <div class="menu">
-                    <input type="text" autocomplete="off" placeholder="bericht">
+                    <input id="text" type="text" autocomplete="off" placeholder="bericht">
                     <button class="send" aria-label="verzenden">
                         <svg version="1.1" x="0px" y="0px" viewBox="0 0 100 100" xml:space="preserve">
                             <g>
