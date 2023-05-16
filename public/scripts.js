@@ -43,3 +43,11 @@ window.mobileAndTabletCheck = function() {
 if (window.mobileAndTabletCheck ()) {
     document.querySelector(`.icons`).style.display = "none";
 }
+
+
+var item = document.querySelector("#horizontal-scroll-balk");
+
+  window.addEventListener("wheel", function (e) {
+    if (e.deltaY > 0) item.scrollLeft += 100;
+    else item.scrollLeft -= 100;
+  });
