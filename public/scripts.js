@@ -21,6 +21,7 @@ ioServer.on(`message`, (message) =>{
 function addMessage(message){
     messages.appendChild(Object.assign(document.createElement(`li`), { textContent: message }))
     messages.scrolltop = messages.scrollHeight
+    messages.scrollTo(0, messages.scrollHeight);
 }
 
 
