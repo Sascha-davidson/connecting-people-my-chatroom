@@ -1,8 +1,10 @@
 > _Fork_ deze leertaak en ga aan de slag. Onderstaande outline ga je gedurende deze taak in jouw eigen GitHub omgeving uitwerken. De instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
 
-# Titel
+# connecting people with my first chatroom
 
-<!-- Geef je project een titel en schrijf in één zin wat het is -->
+<img width="100%" alt="foto van mijn website" src="https://github.com/Sascha-davidson/connecting-people-my-first-chatroom/assets/112861160/a82ee2f2-22c6-4169-bdf1-da941ef930af">
+
+https://connecting-people-my-first-chatroom-git-main-sascha-davidson.vercel.app/
 
 ## Inhoudsopgave
 
@@ -15,23 +17,26 @@
 
 ## Beschrijving
 
-<!-- Bij Beschrijving staat kort beschreven wat voor project het is en wat je hebt gemaakt -->
-<!-- Voeg een mooie poster visual toe 📸 -->
-<!-- Voeg een link toe naar Github Pages 🌐-->
+Ik heb een chatroom gemaakt met socket.io. Dit is een oevening om te leren gebruikmaken van socket.io.
 
 ## Gebruik
 
-<!-- Bij Gebruik staat de user story, hoe het werkt en wat je er mee kan. -->
+De mensen die met elkaar willen chaten. (De mensen die het gaan bekijken zijn klasgenoten en leraren)
 
 ## Kenmerken
 
-<!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met JS gedaan en hoe? Misschien heb je iets met NodeJS gedaan, of heb je een framwork of library gebruikt? -->
+- html
+- css
+- javascript
+- node
+- socket
 
 ## Installatie
 
-<!-- Bij Instalatie staat hoe een andere developer aan jouw repo kan werken -->
+Clone mijn rapo, open de terminal en voor de volgende command uit: `npm install`. Nu kan je de html, css, js en node bewerken. Met `npm start` kan je een locale server aanzeten.
 
 ## Bronnen
+https://socket.io/
 
 ## Licentie
 
