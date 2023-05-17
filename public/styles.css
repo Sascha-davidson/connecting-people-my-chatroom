@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 
 html{
@@ -68,6 +69,8 @@ ul {
   background: linear-gradient(to top, rgb(46, 44, 53) 10%, transparent 60%);
   border-radius: 0.5rem 0.5rem 0.2rem 0.2rem;
   overflow-y: auto;
+  scroll-behavior: smooth;
+
   padding: 1rem;
   display: flex;
   flex-direction: column;
