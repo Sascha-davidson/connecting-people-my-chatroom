@@ -6,7 +6,8 @@
 
 <img width="49%" alt="foto van mijn website, ontwerp 2" src="https://github.com/Sascha-davidson/connecting-people-my-chatroom/assets/112861160/541ed6dd-1a97-4ace-96ff-aa9d3e1987b2">
 
-https://connecting-people-my-first-chatroom-git-main-sascha-davidson.vercel.app/
+ontwerp 1: https://connecting-people-my-chatroom-production.up.railway.app/ <br>
+ontwerp 2: https://connecting-people-my-chatroom-production.up.railway.app/vervoerregio-amsterdam.html
 
 ## Inhoudsopgave
 
