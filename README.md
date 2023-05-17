@@ -2,9 +2,12 @@
 
 # connecting people with my first chatroom
 
-<img width="100%" alt="foto van mijn website" src="https://github.com/Sascha-davidson/connecting-people-my-first-chatroom/assets/112861160/a82ee2f2-22c6-4169-bdf1-da941ef930af">
+<img width="49%" alt="foto van mijn website, ontwerp 1" src="https://github.com/Sascha-davidson/connecting-people-my-chatroom/assets/112861160/cf6f4bae-c096-4d0f-947d-bd4f7d08ed10">
 
-https://connecting-people-my-first-chatroom-git-main-sascha-davidson.vercel.app/
+<img width="49%" alt="foto van mijn website, ontwerp 2" src="https://github.com/Sascha-davidson/connecting-people-my-chatroom/assets/112861160/541ed6dd-1a97-4ace-96ff-aa9d3e1987b2">
+
+ontwerp 1: https://connecting-people-my-chatroom-production.up.railway.app/ <br>
+ontwerp 2: https://connecting-people-my-chatroom-production.up.railway.app/vervoerregio-amsterdam.html
 
 ## Inhoudsopgave
 
