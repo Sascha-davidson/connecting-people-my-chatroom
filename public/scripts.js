@@ -1,12 +1,11 @@
-
-const icons = document.querySelectorAll(`.icon`);
-icons.forEach(element => {
-    let icon = element.querySelector(`p`).innerHTML;
-    console.log(icon)
-    element.addEventListener(`click`, () =>{
-        text.value += icon;
-    })
-});
+// const icons = document.querySelectorAll(`.icon`);
+// icons.forEach(element => {
+//     let icon = element.querySelector(`p`).innerHTML;
+//     console.log(icon)
+//     element.addEventListener(`click`, () =>{
+//         text.value += icon;
+//     })
+// });
 
 window.mobileAndTabletCheck = function() {
     let check = false;

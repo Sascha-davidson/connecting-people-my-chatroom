@@ -22,98 +22,132 @@
 
 <body>
     <main>
+        <section class="join-screen active">
+            <h1>Join my Chatroom</h1>
+            <div class="join-form">
+                <label>Username</label>
+                <input type="text" id="username">
+            </div>
+            <button id="join-user">Join</button>
 
-        <section>
-            <h1> awsome chatroom</h1>
-            <hr>
-            <ul id="vertical-scroll-balk">
+        </section>
+
+        <section class="chat-screen">
+            <header>
+                <div>
+                    <h1>Awsome Chatroom</h1>
+                    <button id="exit-chat">Exit</button>
+                </div>
+                <hr>
+            </header>
+
+
+
+            <section class="message-page">
+            <ul class="messages" id="vertical-scroll-balk">
+                <!-- dummy messages -->
+                <li class="message my-message">
+                    <div class="name">You</div>
+                    <div class="text">Hi</div>
+                </li>
+                <div class="update">
+                    abc is joined the conversation
+                </div>
+                <li class="message other-message">
+                    <div class="name">other person</div>
+                    <div class="text">Hi hoe is het met jou</div>
+                </li>
             </ul>
 
-            <div id="horizontal-scroll-balk" class="icons">
-                <button class="icon" id="icon-1">
-                    <p>✌️</p>
-                </button>
-                <button class="icon" id="icon-2">
-                    <p>💖</p>
-                </button>
-                <button class="icon" id="icon-3">
-                    <p>✨</p>
-                </button>
-                <button class="icon" id="icon-4">
-                    <p>😂</p>
-                </button>
-                <button class="icon" id="icon-5">
-                    <p>👍</p>
-                </button>
-                <button class="icon" id="icon-6">
-                    <p>👌</p>
-                </button>
-                <button class="icon" id="icon-7">
-                    <p>✅</p>
-                </button>
-                <button class="icon" id="icon-8">
-                    <p>❌</p>
-                </button>
-                <button class="icon" id="icon-9D">
-                    <p>💯</p>
-                </button>
-                <button class="icon" id="icon-9D">
-                    <p>💗</p>
-                </button>
-                <button class="icon" id="icon-9D">
-                    <p>⌚</p>
-                </button>
-                <button class="icon" id="icon-9D">
-                    <p>⌛</p>
-                </button>
-                <button class="icon" id="icon-9D">
-                    <p>🤐</p>
-                </button>
-                <button class="icon" id="icon-9D">
-                    <p>😉</p>
-                </button>
-                <button class="icon" id="icon-9D">
-                    <p>👻</p>
-                </button>
-                <button class="icon" id="icon-9D">
-                    <p>🥷</p>
-                </button>
-                <button class="icon" id="icon-9D">
-                    <p>🧙‍♂️</p>
-                </button>
-                <button class="icon" id="icon-9D">
-                    <p>🦸‍♂️</p>
-                </button>
-                <button class="icon" id="icon-9D">
-                    <p>👩‍🍳</p>
-                </button>
-                <button class="icon" id="icon-9D">
-                    <p>🔮</p>
-                </button>
-                <button class="icon" id="icon-9D">
-                    <p>🔆</p>
-                </button>
-                <button class="icon" id="icon-9D">
-                    <p>📱</p>
-                </button>
-                <button class="icon" id="icon-9D">
-                    <p>💐</p>
-                </button>
-                <button class="icon" id="icon-9D">
-                    <p>🔥</p>
-                </button>
-            </div>
-            <form>
-                <div class="menu">
-                    <input id="text" type="text" autocomplete="off" placeholder="bericht">
-                    <button class="send" aria-label="verzenden">
-                        <svg version="1.1" x="0px" y="0px" viewBox="0 0 100 100" xml:space="preserve">
-                            <g>
-                                <path d="M8.9,57.5l42-5c2.9-0.4,2.9-4.6,0-5l-42-5C8.4,27.8,6.4,15.1,3.6,7.4C2.8,5.2,5,3.2,7,4.2l88.1,43.5c1.9,0.9,1.9,3.6,0,4.5
+
+            
+            <div class="post-form">
+                <div id="horizontal-scroll-balk" class="icons">
+                    <button class="icon" id="icon-1">
+                        ✌️
+                    </button>
+                    <button class="icon" id="icon-2">
+                        💖
+                    </button>
+                    <button class="icon" id="icon-3">
+                        ✨
+                    </button>
+                    <button class="icon" id="icon-4">
+                        😂
+                    </button>
+                    <button class="icon" id="icon-5">
+                        👍
+                    </button>
+                    <button class="icon" id="icon-6">
+                        👌
+                    </button>
+                    <button class="icon" id="icon-7">
+                        ✅
+                    </button>
+                    <button class="icon" id="icon-8">
+                        ❌
+                    </button>
+                    <button class="icon" id="icon-9D">
+                        💯
+                    </button>
+                    <button class="icon" id="icon-9D">
+                        💗
+                    </button>
+                    <button class="icon" id="icon-9D">
+                        ⌚
+                    </button>
+                    <button class="icon" id="icon-9D">
+                        ⌛
+                    </button>
+                    <button class="icon" id="icon-9D">
+                        🤐
+                    </button>
+                    <button class="icon" id="icon-9D">
+                        😉
+                    </button>
+                    <button class="icon" id="icon-9D">
+                        👻
+                    </button>
+                    <button class="icon" id="icon-9D">
+                        🥷
+                    </button>
+                    <button class="icon" id="icon-9D">
+                        🧙‍♂️
+                    </button>
+                    <button class="icon" id="icon-9D">
+                        🦸‍♂️
+                    </button>
+                    <button class="icon" id="icon-9D">
+                        👩‍🍳
+                    </button>
+                    <button class="icon" id="icon-9D">
+                        🔮
+                    </button>
+                    <button class="icon" id="icon-9D">
+                        🔆
+                    </button>
+                    <button class="icon" id="icon-9D">
+                        📱
+                    </button>
+                    <button class="icon" id="icon-9D">
+                        💐
+                    </button>
+                    <button class="icon" id="icon-9D">
+                        🔥
+                    </button>
+                </div>
+                <form>
+                    <div class="menu">
+                        <input id="text" type="text" autocomplete="off" placeholder="bericht">
+                        <button class="send" aria-label="verzenden">
+                            <svg version="1.1" x="0px" y="0px" viewBox="0 0 100 100" xml:space="preserve">
+                                <g>
+                                    <path d="M8.9,57.5l42-5c2.9-0.4,2.9-4.6,0-5l-42-5C8.4,27.8,6.4,15.1,3.6,7.4C2.8,5.2,5,3.2,7,4.2l88.1,43.5c1.9,0.9,1.9,3.6,0,4.5
         L7,95.8c-2,1-4.2-1-3.5-3.1C6.4,84.9,8.4,72.2,8.9,57.5z" />
-                            </g>
-                        </svg>
-            </form>
+                                </g>
+                            </svg>
+                </form>
+            </div>
         </section>
     </main>
 </body>

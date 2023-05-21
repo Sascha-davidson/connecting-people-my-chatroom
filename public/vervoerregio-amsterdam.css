@@ -34,9 +34,28 @@ body {
   min-height: 650px;
 }
 
-svg {
-  height: 100%;
-  aspect-ratio: 1;
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+main > section {
+  height: 100vh;
+  height: 100svh;
+  width: 100vw;
+  width: 100svw;
+  padding: 1.5em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  background-color: var(--c-light-gray);
+  min-width: 15em;
+  min-height: 585px;
+  display: none;
+}
+
+main > .active {
+  display: flex;
 }
 
 h1 {
@@ -45,6 +64,18 @@ h1 {
   border-radius: var(--border-radius);
   text-align: center;
   color: var(--c-primary);
+}
+
+main header {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+header > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 1em;
 }
 
 hr {
@@ -57,26 +88,14 @@ hr {
   z-index: 2;
 }
 
-main {
+.message-page {
+  height: 100%;
   display: flex;
   flex-direction: column;
+  gap: 0.4em;
 }
 
-section {
-  height: 100vh;
-  height: 100svh;
-  width: 100vw;
-  width: 100svw;
-  padding: 1.5em;
-  display: flex;
-  flex-direction: column;
-  gap: 0.4rem;
-  background-color: var(--c-light-gray);
-  min-width: 15em;
-  min-height: 585px;
-}
-
-ul {
+.messages {
   height: 100%;
   background-color: rgb(46, 44, 53);
   background: linear-gradient(to top, var(--c-light) 10%, transparent 60%);
@@ -90,15 +109,101 @@ ul {
   gap: 0.4em;
 }
 
-li {
-  width: fit-content;
+.messages .message {
   list-style-type: none;
   text-decoration: none;
-  padding: 0.5rem 1rem;
-  border-radius: var(--border-radius);
-  background-color: var(--c-light);
-  border: 2px solid var(--c-primary);
+  /* border-radius: var(--border-radius); */
+  /* background-color: var(--c-light); */
+  /* border: 2px solid var(--c-primary); */
   color: var(--c-dark);
+  padding: 0.5em;
+  display: flex;
+  flex-direction: column;
+}
+
+.my-message {
+  align-items: flex-end;
+}
+
+.message .name {
+  padding: 0 0.5em;
+}
+
+.other-message {
+  align-items: flex-start;
+}
+
+.message .name {
+  width: fit-content;
+  border-radius: 10px 0 0 0;
+  color: var(--c-primary);
+  font-size: 0.9em;
+}
+
+.message .text {
+  background-color: var(--c-light);
+  width: fit-content;
+  padding: 0.5em;
+  border-radius: 10px;
+}
+
+.update {
+  color: var(--c-primary);
+  text-align: center;
+}
+
+.post-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4em;
+}
+
+.icons {
+  width: calc(100%);
+  display: flex;
+  flex-direction: row;
+  gap: 0.4rem;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  padding-bottom: 0.4rem;
+}
+
+.icon {
+  aspect-ratio: 1;
+  padding: 0.75rem;
+  font-size: 1.5rem;
+  transition: all 0.3s ease-in-out;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+svg {
+  height: 100%;
+  aspect-ratio: 1;
+}
+
+.icon:is(:hover, :focus) {
+  outline: 4px solid var(--c-primary);
+  transform: scale(0.8);
+}
+
+#horizontal-scroll-balk::-webkit-scrollbar-track {
+  background-color: var(--c-light);
+  border-radius: var(--border-radius);
+}
+
+#horizontal-scroll-balk::-webkit-scrollbar {
+  height: 0.6em;
+  background-color: var(--c-light);
+  width: calc(100%);
+  border-radius: var(--border-radius);
+}
+
+#horizontal-scroll-balk::-webkit-scrollbar-thumb {
+  background-color: var(--c-primary);
+  border-radius: var(--border-radius);
 }
 
 form {
@@ -137,63 +242,6 @@ button {
 .send {
   border-radius: var(--border-radius);
   background-color: var(--c-primary);
-}
-
-.icons {
-  /* overflow-x: auto; */
-  width: calc(100%);
-  /* padding: 0.1rem 0.1rem 0.4rem 0.1rem;
-  margin: 0 -0.1rem 0 -0.1rem; */
-  display: flex;
-  flex-direction: row;
-  gap: 0.4rem;
-  overflow-x: scroll;
-  overflow-y: hidden;
-  padding-bottom: 0.4rem;
-}
-
-.icon {
-  aspect-ratio: 1;
-  padding: 0.75rem;
-  font-size: 1.5rem;
-  /* height: fit-content; */
-  transition: all 0.3s ease-in-out;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.icon:is(:hover, :focus) {
-  outline: 4px solid var(--c-primary);
-  transform: scale(0.8);
-}
-
-.icon p {
-  transition: all 0.3s ease-in-out;
-}
-
-.icon:is(:hover, :focus) p {
-  transform: scale(0.8);
-  transition: all 0.3s ease-in-out;
-}
-
-#horizontal-scroll-balk::-webkit-scrollbar-track {
-  /* -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); */
-  background-color: var(--c-light);
-  border-radius: var(--border-radius);
-}
-
-#horizontal-scroll-balk::-webkit-scrollbar {
-  height: 0.6em;
-  background-color: var(--c-light);
-  width: calc(100%);
-  border-radius: var(--border-radius);
-}
-
-#horizontal-scroll-balk::-webkit-scrollbar-thumb {
-  background-color: var(--c-primary);
-  border-radius: var(--border-radius);
 }
 
 #vertical-scroll-balk::-webkit-scrollbar {
@@ -236,7 +284,7 @@ button:is(:hover, :focus) svg,
 }
 
 @media screen and (min-width: 650px) {
-  section {
+  main > section {
     height: 90vh;
     height: 90svh;
     width: 90vw;

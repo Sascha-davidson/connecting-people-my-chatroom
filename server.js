@@ -10,19 +10,21 @@ const port = process.env.PORT || 8000;
 
 app.use(express.static(path.resolve("public")));
 
-ioServer.on(`connection`, (client) => {
-  console.log(`user ${client.id} connected`);
+ioServer.on(`connection`, function(socket) {
 
-  client.on(`message`, (message) => {
-    console.log(`user ${client.id} sent messege: ${message}`);
-
-    ioServer.emit(`message`, message);
+  socket.on(`newuser`, function (username) {
+    socket.broadcast.emit(`update`, username + `joined the conversation`);
   });
 
-  client.on(`disconnect`, () => {
-    console.log(`user ${client.id} disconnected`);
+  socket.on(`exituser`, function (username) {
+    socket.broadcast.emit(`update`, username + `left the conversation`);
+  });
+
+  socket.on(`chat`, function (message) {
+    socket.broadcast.emit(`chat`, message);
   });
 });
+
 
 http.listen(port, function () {
   console.log(`server running on http://localhost:${port}`);
