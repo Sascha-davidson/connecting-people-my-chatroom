@@ -67,7 +67,7 @@ Focus sprint 11 - De focus van deze sprint ligt op het maken van multi-user omge
 
 ### Deze leertaak hoort bij het gedragscriterium:
 
-P: Je combineert aangeboden principes en conventies op het gebied van frontend, interface design en vormgeving om een passende oplossing voor een opdrachtgever te realiseren.
+P: Je combineert aangeboden principes en conventies op het gebied van frontend, interface design en vormgeving om een passende oplossing voor een opdrachtgever te realiseren.  
 L: Je maakt aangeboden en zelf gevonden materie eigen en gebruikt dit bij leertaken, deelt ervaring binnen de squad.
 
 Deze opdracht is done als:
