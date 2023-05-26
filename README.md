@@ -36,7 +36,7 @@ De mensen die met elkaar willen chaten. (De mensen die het gaan bekijken zijn kl
 
 ## Installatie
 
-Clone mijn rapo, open de terminal en voor de volgende command uit: `npm install`. Nu kan je de html, css, js en node bewerken. Met `npm start` kan je een locale server aanzeten.
+Clone mijn repo, open de terminal en voor de volgende command uit: `npm install`. Nu kan je de html, css, js en node bewerken. Met `npm start` kan je een locale server aanzeten.
 
 ## Bronnen
 https://socket.io/
